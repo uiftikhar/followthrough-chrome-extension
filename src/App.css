@@ -1,0 +1,31 @@
+/* App-specific styles */
+/* Most styling is now handled by the theme system in index.css */
+
+/* Animation for any loading states or transitions in the future */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Chrome extension specific styles */
+.extension-popup {
+  width: 400px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* Utility for focus states in extension context */
+.focus-visible:focus-visible {
+  outline: 2px solid #0052CC; /* primary color */
+  outline-offset: 2px;
+}
